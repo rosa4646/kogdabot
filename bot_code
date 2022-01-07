@@ -1,0 +1,20 @@
+import os 
+import discord
+
+from dotenv import load_dotenv
+load_dotenv()
+
+TOKEN = 'OTE2MDIzNzA2ODczMTEwNTYw.YakHjg.MrI0oNQ7G3vJLHa6Aqrauk1j-E4'
+GUILD = '916024637526278165'
+
+bot = commands.Bot(command_prefix='@')
+
+@bot.event
+async def on_ready():
+    print(f'Bot connected as {bot.user}')
+
+
+@bot.command()
+async def dosomething(ctx):
+    await ctx.send("I did something")
+bot.run(TOKEN)
