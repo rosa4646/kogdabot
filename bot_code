@@ -4,7 +4,7 @@ import discord
 from dotenv import load_dotenv
 load_dotenv()
 
-TOKEN = 'OTE2MDIzNzA2ODczMTEwNTYw.YakHjg.MrI0oNQ7G3vJLHa6Aqrauk1j-E4'
+TOKEN = 'TOKEN'
 GUILD = '916024637526278165'
 
 bot = commands.Bot(command_prefix='@')
